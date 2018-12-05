@@ -27,9 +27,11 @@ typedef struct rect rectangle;
 rectangle canonicalize(rectangle r) {
   //WRITE THIS FUNCTION
   if (r.width<0){
+    r.x += r.width;
     r.width*=-1;
   }
   if (r.height<0){
+    r.y += r.height;
     r.height*=-1;
   }
   return r;
