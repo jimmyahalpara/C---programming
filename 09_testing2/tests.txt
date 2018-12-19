@@ -1,0 +1,27 @@
+aaaaa bbbbc
+aaaac -----
+112aaa aaaaa
+aaaaa aaaaaa
+12345 67890
+aaaaa
+bbb
+b
+>>>> hijjj
+aaaaa abbbb
+ aaaaa bbbbb
+aaaab aaaaa bbbbb
+aaaaa bbbbb
+aaaab bbbbb
+baaaa bbbbb
+hijkl hij>j
+hij>k aabbb
+123bb aaaaaa
+aaxyz abcde
+aaaaa bbbxy
+aaaaa bbxyz
+aaaaa abcde
+aaabb bbxyz
+aaxyz abcde
+abcde abcde
+aaa bbbbb
+aaaaa bbb
