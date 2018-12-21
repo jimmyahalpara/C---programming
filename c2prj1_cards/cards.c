@@ -26,7 +26,7 @@ const char * ranking_to_string(hand_ranking_t r) {
     return "STRAIGHT";
   }
   else if (r == THREE_OF_A_KIND){
-    return "THREE OF_A_KIND";
+    return "THREE_OF_A_KIND";
   }
   else if (r == TWO_PAIR){
     return "TWO_PAIR";
