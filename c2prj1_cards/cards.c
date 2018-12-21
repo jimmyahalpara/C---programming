@@ -58,6 +58,9 @@ char value_letter(card_t c) {
   else if (c.value == 11){
     return 'J';
   }
+  else if (c.value == 14){
+    return 'A';
+  }
   else {
     return '-';
   }
