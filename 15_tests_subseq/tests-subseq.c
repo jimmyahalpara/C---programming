@@ -21,4 +21,5 @@ int main(){
   test(array5, 4, 3);
   int array6[] = {};
   test(array6,0,0);
+  return(EXIT_SUCCESS)
 }
