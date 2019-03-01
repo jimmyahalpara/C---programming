@@ -1,13 +1,52 @@
-Grading at Fri Mar  1 17:55:01 UTC 2019
-I expected to find a file called 'test-subseq.c' but it did not exist
-(or was not a regular file)
-Here are the files that I can find:
-grade.txt
-next-README
-README
-run_all.sh
-tests-subseq.c
-tests-subseq.c~
-Can't proceed without test-subseq.c
+Grading at Fri Mar  1 18:02:39 UTC 2019
+**Testing broken implementation 10 **
+-------------------------------------
 
-Overall Grade: FAILED
+
+**Testing broken implementation 11 **
+-------------------------------------
+
+
+**Testing broken implementation 1 **
+-------------------------------------
+
+
+**Testing broken implementation 2 **
+-------------------------------------
+
+
+**Testing broken implementation 3 **
+-------------------------------------
+
+
+**Testing broken implementation 4 **
+-------------------------------------
+
+
+**Testing broken implementation 5 **
+-------------------------------------
+
+
+**Testing broken implementation 6 **
+-------------------------------------
+
+
+**Testing broken implementation 7 **
+-------------------------------------
+
+
+**Testing broken implementation 8 **
+-------------------------------------
+
+
+**Testing broken implementation 9 **
+-------------------------------------
+
+
+**Testing correct implementation **
+-------------------------------------
+
+
+All test programs were handled correctly
+
+Overall Grade: PASSED
