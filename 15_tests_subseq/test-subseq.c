@@ -6,7 +6,7 @@ size_t maxSeq(int *array, size_t n);
 int test(int *ar, size_t size, size_t correct){
   if (maxSeq(ar,size) != correct){
     exit(EXIT_FAILURE);
-}
+  }}
 
 int main(){
   int array1[] = {1,2,3,4};
@@ -21,5 +21,5 @@ int main(){
   test(array5, 4, 3);
   int array6[] = {};
   test(array6,0,0);
-  return(EXIT_SUCCESS)
+  return(EXIT_SUCCESS);
 }
