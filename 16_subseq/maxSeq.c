@@ -29,7 +29,3 @@ size_t maxSeq(int *array, size_t n){
   }
   return size;
 }
-
-int main(){
-  return EXIT_SUCCESS;
-}
