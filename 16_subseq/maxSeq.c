@@ -22,10 +22,14 @@ size_t maxSeq(int *array, size_t n){
 	  }
 	}
       }
-      if (ans_temp > ans){
-	ans = ans_temp;
+      if (ans_temp > size){
+	size = ans_temp;
       }
     }
-    return size;
   }
+  return size;
+}
+
+int main(){
+  return EXIT_SUCCESS;
 }
