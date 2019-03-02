@@ -1,0 +1,7 @@
+Grading at Sat Mar  2 07:06:50 UTC 2019
+Attempting to compile maxSeq.c 
+maxSeq.c:2:20: fatal error: stslib.h: No such file or directory
+compilation terminated.
+The code did not compile!
+
+Overall Grade: F
