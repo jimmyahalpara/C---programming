@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stslib.h>
+#include <stdlib.h>
 
 size_t maxSeq(int *array, size_t n){
   size_t size = 0;
