@@ -1,10 +1,10 @@
-Grading at Sat Mar  9 10:04:31 UTC 2019
+Grading at Sat Mar  9 10:17:12 UTC 2019
 Attempting to compile rotate.c
-Running testcase 1
-valgrind reported memory errors
-Running testcase 1
-valgrind reported memory errors
-Running testcase 1
-valgrind reported memory errors
+rotate.c: In function ‘rotate’:
+rotate.c:7:7: error: implicit declaration of function ‘print’ [-Werror=implicit-function-declaration]
+       print("%c", matrix[j][i]);
+       ^
+cc1: all warnings being treated as errors
+The code did not compile!
 
 Overall Grade: F
