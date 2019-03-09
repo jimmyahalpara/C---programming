@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -pedantic -std=gnu99 -Wall -Werror
+EJOBS = $(wildcard *.o)
+SRCS = $(wildcard *.c)
+OBJS = $(patsubst %.c,%.o,$(SRCS))
+myProgram: $(OBJS)
+	gcc -o $@ $(EJOBS)
+clean:
+	rm -f myProgram myProgram-debug *.o *.c~ *.h~
+depend:
+	makedepend $(SRCS)
+	makedepend -a -o $(SRCS)
+
