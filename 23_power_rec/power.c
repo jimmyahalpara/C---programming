@@ -6,7 +6,7 @@ unsigned power_helper(unsigned x, unsigned y, unsigned ans){
   if (y == 0){
     return ans;
   }
-  assert(a >= 0 && x < 42996729 && y > 0 && y < 4294967296);
+  assert(x >= 0 && x < 42996729 && y > 0 && y < 4294967296);
   return power_helper(x, y -1, ans*x);
 }
 
