@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
+
+unsigned power_helper(unsigned x, unsigned y, unsigned ans){
+  if (y == 0){
+    return ans;
+  }
+  assert(a >= 0 && x < 42996729 && y > 0 && y < 4294967296);
+  return power_helper(x, y -1, ans*x);
+}
 
 unsigned power(unsigned x, unsigned y){
-  if (x == 0) && (y == 0){
-      return 0;
-    }
-  else if (y == 0){
-    return 1;
-  }
-  else{
-    return power(x, y-1);
-  }
+  return power_helper(x,y,1);
 }
