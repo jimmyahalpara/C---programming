@@ -1,11 +1,45 @@
-Grading at Fri Mar 22 07:48:59 UTC 2019
+Grading at Fri Mar 22 07:50:01 UTC 2019
 Attempting to compile power.c
-In file included from power.c:3:0:
-power.c: In function ‘power_helper’:
-power.c:9:10: error: ‘a’ undeclared (first use in this function)
-   assert(a >= 0 && x < 42996729 && y > 0 && y < 4294967296);
-          ^
-power.c:9:10: note: each undeclared identifier is reported only once for each function it appears in
-The code did not compile!
+Attempting to compile power.o with our main
+Checking for unsigned power (unsigned x, unsigned y)
+Found on line 13, column 1 
+Checking for no iteration (do, while, for)
+Checking that power is recursive
+0^0 was Correct
+0^1 was Correct
+0^2 was Correct
+0^6 was Correct
+0^8 was Correct
+0^11 was Correct
+1^0 was Correct
+1^1 was Correct
+1^2 was Correct
+1^6 was Correct
+1^8 was Correct
+1^11 was Correct
+4^0 was Correct
+4^1 was Correct
+4^2 was Correct
+4^6 was Correct
+4^8 was Correct
+4^11 was Correct
+5^0 was Correct
+5^1 was Correct
+5^2 was Correct
+5^6 was Correct
+5^8 was Correct
+5^11 was Correct
+9^0 was Correct
+9^1 was Correct
+9^2 was Correct
+9^6 was Correct
+9^8 was Correct
+9^11 was Correct
+12^0 was Correct
+12^1 was Correct
+12^2 was Correct
+12^6 was Correct
+12^8 was Correct
+12^11 was Correct
 
-Overall Grade: F
+Overall Grade: A
