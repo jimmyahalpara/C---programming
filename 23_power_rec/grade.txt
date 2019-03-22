@@ -1,13 +1,11 @@
-Grading at Fri Mar 22 07:44:31 UTC 2019
+Grading at Fri Mar 22 07:48:59 UTC 2019
 Attempting to compile power.c
-power.c: In function ‘power’:
-power.c:5:18: error: expected identifier before ‘(’ token
-   if (x == 0) && (y == 0){
-                  ^
-power.c:14:1: error: control reaches end of non-void function [-Werror=return-type]
- }
- ^
-cc1: all warnings being treated as errors
+In file included from power.c:3:0:
+power.c: In function ‘power_helper’:
+power.c:9:10: error: ‘a’ undeclared (first use in this function)
+   assert(a >= 0 && x < 42996729 && y > 0 && y < 4294967296);
+          ^
+power.c:9:10: note: each undeclared identifier is reported only once for each function it appears in
 The code did not compile!
 
 Overall Grade: F
