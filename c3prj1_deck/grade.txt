@@ -1,0 +1,14 @@
+Grading at Sat Mar 23 16:33:06 UTC 2019
+Compiling deck.c
+Compiling cards.c
+cards.c: In function ‘card_from_num’:
+cards.c:134:6: error: ‘sl’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   if (suit_let == 's'){
+      ^
+cards.c:156:8: note: ‘sl’ was declared here
+   char sl;
+        ^
+cc1: all warnings being treated as errors
+Could not compile your cards.c!
+
+Overall Grade: FAILED
