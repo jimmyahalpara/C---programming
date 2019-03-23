@@ -17,6 +17,7 @@ int deck_contains(deck_t * d, card_t c) {
     if ((**card).suit == c.suit && (**card).value == c.value){
 	return 1;
       }
+    card++;
   }
   return 0;
 }
@@ -40,7 +41,7 @@ void assert_full_deck(deck_t * d) {
   deck_t test_d;
   for (int i = 0; i < d -> n_cards - 1; i++){
     test_d.cards = d -> cards + i + 1;
-    test_d.n_cards = d -> n_cards -i - 1;
+    test_d.n_cards = d -> n_cards - i - 1;
     assert( deck_contains(&test_d, **ptr_c) == 0);
     ptr_c++;
   }
