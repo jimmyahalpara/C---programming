@@ -1,14 +1,16 @@
-Grading at Sat Mar 23 16:33:06 UTC 2019
+Grading at Sat Mar 23 16:52:44 UTC 2019
 Compiling deck.c
 Compiling cards.c
-cards.c: In function ‘card_from_num’:
-cards.c:134:6: error: ‘sl’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
-   if (suit_let == 's'){
-      ^
-cards.c:156:8: note: ‘sl’ was declared here
-   char sl;
-        ^
-cc1: all warnings being treated as errors
-Could not compile your cards.c!
+Linking cards.o deck.o deck-c4.o and the grader's .o file
+Checking the output of all the functions other than shuffle
+Line_7_did_not_match
+Your file did not match the expected ouput
+ - Those functions seem to have problems
+Checking your shuffle results with a 6 card hand...
+  Least common hand: %
+  Most  common hand: %
+  Perfectly even is: 0.138888%
+ That doesn't seem terribly uniform.
+ Try to improve your shuffling algorithm and re-grade
 
-Overall Grade: FAILED
+Overall Grade: F
