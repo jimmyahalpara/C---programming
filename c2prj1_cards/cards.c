@@ -166,6 +166,9 @@ card_t card_from_num(unsigned c) {
   else if (su == 3){
     sl = 'c';
   }
+  else {
+    sl = ' ';
+  }
   temp = card_from_letters(value_l, sl);
   return temp;
 }
