@@ -4,7 +4,8 @@
 
 int findkey(FILE *f){
   int arr[26] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-  int c;
+  int  c;
+  
   while ((c = fgetc(f)) != EOF){
     if (isalpha(c)){
       c = tolower(c);
@@ -32,7 +33,7 @@ int main(int argc, char ** argv){
     return EXIT_FAILURE;
   }
   FILE *f = fopen(argv[1], "r");
-  if (f = NULL){
+  if (f == NULL){
     perror("Could not open file");
     return EXIT_FAILURE;
   }
