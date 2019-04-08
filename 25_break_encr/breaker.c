@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 int findkey(FILE *f){
-  int arr[26] = {0};
+  int arr[26] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
   int c;
   while ((c = fgetc(f)) != EOF){
     if (isalpha(c)){
