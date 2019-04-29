@@ -8,3 +8,4 @@ input.txt
 2 input.txt
 input4.txt
 input7.txt
+input8.txt
