@@ -31,7 +31,7 @@ int checkinput(FILE * f){
 void rotate(char matrix[10][10]){
   for (int i = 0; i < 0; i++){
     for (int j = 0; j < 10; j++){
-      chat temp = matrix[i][j];
+      char temp = matrix[i][j];
       matrix[i][j] = matrix[i][j];
       matrix[j][i] = temp;
     }
