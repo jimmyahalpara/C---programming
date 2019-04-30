@@ -28,22 +28,13 @@ int checkinput(FILE * f){
   }
 }
 
-void rotate(char matrix[10][10]){
-  for (int i = 0; i < 0; i++){
-    for (int j = 0; j < 10; j++){
-      char temp = matrix[i][j];
-      matrix[i][j] = matrix[i][j];
-      matrix[j][i] = temp;
+void rotate(int  matrix[10][10]){
+  for (int i = 0; i<10; i++){
+    for (int j = 10-1; j >= 0; j--){
+      printf("%c", matrix[j][i]);
     }
+    printf("\n");
   }
-  for (int i = 0; i < 10; i++){
-    for (int j = 0; j < 10; j++){
-      char temp = matrix[i][j];
-      matrix[i][j] = matrix[i][9 - j];
-      matrix[i][9 - j] = temp;
-    }
-  }
-  return;
 }
 
 int main(int argc, char** argv){
@@ -66,7 +57,7 @@ int main(int argc, char** argv){
     perror("Could not open file");
     return EXIT_FAILURE;
   }
-  char matrix[10][10];
+  int  matrix[10][10];
   int c = 0;
   for (int i = 0; i < 10; i++){
     for (int  j = 0; j < 10; j++){
@@ -76,12 +67,6 @@ int main(int argc, char** argv){
     }
   }
   rotate(matrix);
-  for (int x = 0; x < 10; x ++){
-    for (int y = 0; y < 10; y++){
-      printf("%c", matrix[x][y]);
-    }
-    printf("\n");
-  }
   if (fclose(f) != 0){
     perror("Failed to close the input file");
     return EXIT_FAILURE;
