@@ -1,0 +1,15 @@
+Grading at Tue Apr 30 06:19:31 UTC 2019
+Attempting to compile rotateMatrix.c
+rotateMatrix.c: In function ‘rotate’:
+rotateMatrix.c:34:7: error: unknown type name ‘chat’
+       chat temp = matrix[i][j];
+       ^
+rotateMatrix.c: In function ‘main’:
+rotateMatrix.c:74:13: error: comparison between pointer and integer [-Werror]
+       if (c == "\n") c = fgetc(f);
+             ^
+rotateMatrix.c:74:13: error: comparison with string literal results in unspecified behavior [-Werror=address]
+cc1: all warnings being treated as errors
+The code did not compile!
+
+Overall Grade: F
