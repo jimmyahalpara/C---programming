@@ -1,6 +1,6 @@
 #include <string.h>
 #include <stdio.h>
-#include <stdlib.h
+#include <stdlib.h>
 #include <assert.h>
 #include "deck.h"
 #include "cards.h"
@@ -40,7 +40,7 @@ deck_t * hand_from_string(const char * str, future_cards_t * fc){
   return deck;
 }
 
-deck_t ** read_input(FILE * f, size_t * n_hands, furure_cards_t * fc){
+deck_t ** read_input(FILE * f, size_t * n_hands, future_cards_t * fc){
   deck_t ** arr = NULL;
   size_t n_hand = 0;
   char *line = NULL;
