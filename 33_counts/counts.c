@@ -42,7 +42,7 @@ void printCounts(counts_t * c, FILE * outFile) {
     x = c->cntArr[i];
     fprintf(outFile, "%s: %zd\n", x -> str, x -> cnt);
   }
-  if (c -> unknown != 0) fprintf(outFile, "<outFIle> : %zd\n", c -> unknown);
+  if (c -> unknown != 0) fprintf(outFile, "<unknown> : %zd\n", c -> unknown);
 }
 
 void freeCounts(counts_t * c) {
