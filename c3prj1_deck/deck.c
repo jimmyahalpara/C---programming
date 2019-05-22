@@ -60,7 +60,7 @@ card_t * add_empty_card(deck_t * deck){
   card_t * c1 = malloc(sizeof(*c1));
   c1 -> value = 0;
   c1 -> suit = 0;
-  deck -> cards = realloc(deck -> cards, (deck -> n_cards + 1) * (*deck -> cards));
+  deck -> cards = realloc(deck -> cards, (deck -> n_cards + 1) * sizeof(*deck -> cards));
   deck -> cards[deck -> n_cards] = c1;
   deck -> n_cards ++;
   return c1;
