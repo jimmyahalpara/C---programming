@@ -55,6 +55,7 @@ board_t * makeBoard(int w, int h, int numMines) {
     }
     b -> board[y] = curr;
     curr = NULL;
+    free(curr);
   }
   for(int i = 0; i < numMines; i++){
     addRandomMine(b);
@@ -129,6 +130,10 @@ int countMines(board_t * b, int x, int y) {
   }
   y1 = y;
   if (checkvalid(x1, y1, w, h)){
+    if (IS_MINE(b -> board[y1][x1])) count ++;
+  }
+  y1 = y+1;
+  if (checkvalid(x1, y1, w,h)){
     if (IS_MINE(b -> board[y1][x1])) count ++;
   }
   x1 = x+1;
