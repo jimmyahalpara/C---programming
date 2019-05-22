@@ -72,7 +72,7 @@ deck_t * make_deck_exclude(deck_t * excluded_cards){
   ans -> n_cards = 0;
   for (unsigned i = 0; i < 52; i++){
     card_t c = card_from_num(i);
-    if (!deck_containes(excluded_cards,c)) add_card_to(ans,c);
+    if (!deck_contains(excluded_cards,c)) add_card_to(ans,c);
   }
   return ans;
 }
@@ -81,7 +81,7 @@ deck_t * build_remaining_deck(deck_t ** hands, size_t n_hands){
   deck_t * deck = malloc(sizeof(*deck));
   deck -> n_cards = 0;
   deck -> cards = NULL;
-  for (size_t i = 0; x < hands[i] -> n_cards; x++){
+  for (size_t i = 0; i < n_hands ; i++){
     for (int x = 0; x < hands[i] -> n_cards; x++){
     deck -> cards = realloc(deck -> cards, (deck -> n_cards + 1) * sizeof(*deck ->cards));
     deck -> cards[deck -> cards] = hands[i] -> cards[x];
