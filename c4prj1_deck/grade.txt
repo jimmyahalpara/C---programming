@@ -1,0 +1,29 @@
+Grading at Wed May 22 16:09:36 UTC 2019
+Compiling deck.c -> deck.o
+deck.c: In function ‘add_card_to’:
+deck.c:50:1: error: parameter name omitted
+ void add_card_to(deck_t * deck, card_t){
+ ^
+deck.c:52:17: error: ‘c’ undeclared (first use in this function)
+   c1 -> value = c.value;
+                 ^
+deck.c:52:17: note: each undeclared identifier is reported only once for each function it appears in
+deck.c: In function ‘add_empty_card’:
+deck.c:63:64: error: invalid operands to binary * (have ‘size_t {aka long unsigned int}’ and ‘card_t * {aka struct card_tag *}’)
+   deck -> cards = realloc(deck -> cards, (deck -> n_cards + 1) * (*deck -> cards));
+                                                                ^
+deck.c: In function ‘make_deck_exclude’:
+deck.c:75:10: error: implicit declaration of function ‘deck_containes’ [-Werror=implicit-function-declaration]
+     if (!deck_containes(excluded_cards,c)) add_card_to(ans,c);
+          ^
+deck.c: In function ‘build_remaining_deck’:
+deck.c:84:22: error: ‘x’ undeclared (first use in this function)
+   for (size_t i = 0; x < hands[i] -> n_cards; x++){
+                      ^
+deck.c:87:18: error: array subscript is not an integer
+     deck -> cards[deck -> cards] = hands[i] -> cards[x];
+                  ^
+cc1: all warnings being treated as errors
+Compilation of deck.c failed
+
+Overall Grade: F
