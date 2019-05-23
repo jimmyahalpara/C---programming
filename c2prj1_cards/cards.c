@@ -6,12 +6,12 @@
 
 
 void assert_card_valid(card_t c) {
-  /*int cond1, cond2;
+  int cond1, cond2;
   cond1 = (c.value >= 2) && (c.value <= VALUE_ACE);
   cond2 = (c.suit == SPADES) || (c.suit == CLUBS) || (c.suit == HEARTS) || (c.suit == DIAMONDS);
-  assert(cond1 && cond2);*/
-   assert(c.value >= 2 && c.value <= 14);
-     assert(c.suit == SPADES || c.suit == CLUBS || c.suit == DIAMONDS || c.suit == HEARTS);
+  assert(cond1 && cond2);
+    /* assert(c.value >= 2 && c.value <= 14);
+       assert(c.suit == SPADES || c.suit == CLUBS || c.suit == DIAMONDS || c.suit == HEARTS);*/
 }
 
 const char * ranking_to_string(hand_ranking_t r) {
